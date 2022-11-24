@@ -3,4 +3,4 @@ project(implementations)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(implementations main.cpp stack.cpp stack.h stack_ll.cpp stack_ll.h)
+add_executable(implementations main.cpp stack.cpp stack.h stack_ll.cpp stack_ll.h Queue.cpp Queue.h Queue_ll.cpp Queue_ll.h)
