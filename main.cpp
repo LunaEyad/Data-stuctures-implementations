@@ -2,39 +2,17 @@
 #include "stack.h"
 #include "Queue.h"
 
-#include "Queue_ll.hh"
+#include "Queue_ll.h"
 #include "stack_ll.h"
 using namespace std;
 int main() {
-
-    Queue<char>q(5);
-
-    q.enqueue('a');
-
-  q.enqueue('b');
-
-    q.enqueue('c');
-
-    q.enqueue('d');
-
-    q.enqueue('e');
-
-   q.enqueue('f');
-
+Queue_ll<int > q;
+q.push_back(1);
+q.push_back(2);
+cout<<q.pop_front()<<endl;
     q.print();
-
-    cout<<endl;
-
-
+    cout<<q.end()<<endl;
+    cout<<q.begin()<<endl;
 
 
-    q.dequeue();
-
-    q.enqueue('J');
-
-    q.print();
-
-    cout<<endl;
-
-    cout<<q.search('e')<<endl;
 }
